@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Liv Investment (Pty) Ltd</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-logo">
+      <img src="assets/images/logo/logo.jpeg" alt="Liv Investment Logo"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+      <span style="display:none;color:#fff;font-family:'Playfair Display',serif;font-size:18px;font-weight:700;">LIV <span style="color:#c9a84c">INVESTMENT</span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" id="nav-home">Home</a></li>
+      <li><a href="about.html" id="nav-about">About Us</a></li>
+      <li><a href="ict.html" id="nav-ict">ICT Solutions</a></li>
+      <li><a href="cleaning.html" id="nav-cleaning">Cleaning</a></li>
+      <li><a href="security.html" id="nav-security">Security</a></li>
+      <li><a href="contact.html" id="nav-contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- CONTACT PAGE -->
+  <main class="page">
+
+    <div class="contact-hero">
+      <div>
+        <div class="section-tag">Contact Us</div>
+        <h1>Get in Touch</h1>
+        <p>Ready to work with us? Reach out for a free consultation or quote.</p>
+      </div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <div class="ci-label">Location</div>
+            <div class="ci-value">Midrand, Gauteng, South Africa</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <div class="ci-label">Phone</div>
+            <div class="ci-value">+27 (0) 12 345 6789</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <div class="ci-label">Email</div>
+            <div class="ci-value">info@livinvestment.co.za</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+          <div>
+            <div class="ci-label">Business Hours</div>
+            <div class="ci-value">Mon–Fri: 08:00–17:00<br>Sat: 09:00–13:00</div>
+          </div>
+        </div>
+        <div style="margin-top:32px;">
+          <div class="ci-label" style="margin-bottom:16px;">Follow Us</div>
+          <div style="display:flex;gap:12px;">
+            <div style="width:40px;height:40px;background:var(--navy);border-radius:8px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:16px;color:var(--gold);"><i class="fa-brands fa-x-twitter"></i></div>
+            <div style="width:40px;height:40px;background:var(--navy);border-radius:8px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:16px;color:var(--gold);"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div style="width:40px;height:40px;background:var(--navy);border-radius:8px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:16px;color:var(--gold);"><i class="fa-brands fa-facebook-f"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3>Send Us a Message</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Your full name">
+          </div>
+          <div class="form-group">
+            <label>Company Name</label>
+            <input type="text" placeholder="Your company">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="+27 ...">
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="you@company.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Service Required</label>
+          <select>
+            <option>Select a service...</option>
+            <option>ICT Solutions</option>
+            <option>Cleaning Solutions</option>
+            <option>Security Solutions</option>
+            <option>General Inquiry</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Project Details</label>
+          <textarea placeholder="Briefly describe your requirements..."></textarea>
+        </div>
+        <button class="btn-primary" style="width:100%;padding:16px;" onclick="submitForm()">Send Message →</button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo/logo.jpeg" alt="Liv Investment" onerror="this.style.display='none'">
+        <p style="color:var(--gold);font-weight:700;margin-bottom:8px;font-size:15px;">LIV INVESTMENT (PTY) LTD</p>
+        <p>ICT | Cleaning | Security Solutions<br>Based in Midrand, South Africa.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="ict.html">ICT Solutions</a>
+        <a href="cleaning.html">Cleaning Solutions</a>
+        <a href="security.html">Security Solutions</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a><i class="fa-solid fa-location-dot"></i> Midrand, Gauteng</a>
+        <a><i class="fa-solid fa-phone"></i> +27 (0) 12 345 6789</a>
+        <a><i class="fa-solid fa-envelope"></i> info@livinvestment.co.za</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 <span class="footer-gold">Liv Investment (Pty) Ltd</span>. All rights reserved.</p>
+      <p>ICT | Cleaning | Security Solutions</p>
+    </div>
+  </footer>
+
+  <!-- CHATBOT -->
+  <div class="chatbot-fab" onclick="toggleChat()" title="Chat with us"><i class="fa-solid fa-comment-dots"></i></div>
+  <div class="chatbot-window" id="chatWindow">
+    <div class="chat-header">
+      <div class="chat-avatar"><i class="fa-solid fa-robot"></i></div>
+      <div class="chat-header-info">
+        <div class="chat-name">Liv Assistant</div>
+        <div class="chat-status">● Online — ready to help</div>
+      </div>
+      <div class="chat-close" onclick="toggleChat()">×</div>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <div class="chat-msg">Welcome to <strong>Liv Investment (Pty) Ltd</strong>! 👋 How can we assist you today?</div>
+      <div class="chat-options">
+        <div class="chat-option" onclick="chatSelect('ict')"><i class="fa-solid fa-laptop-code"></i> ICT Solutions <span class="co-arrow">›</span></div>
+        <div class="chat-option" onclick="chatSelect('cleaning')"><i class="fa-solid fa-broom"></i> Cleaning Services <span class="co-arrow">›</span></div>
+        <div class="chat-option" onclick="chatSelect('security')"><i class="fa-solid fa-shield-halved"></i> Security Solutions <span class="co-arrow">›</span></div>
+        <div class="chat-option" onclick="chatSelect('quote')"><i class="fa-solid fa-clipboard-list"></i> Request a Quote <span class="co-arrow">›</span></div>
+        <div class="chat-option" onclick="chatSelect('consultant')"><i class="fa-solid fa-phone"></i> Speak to a Consultant <span class="co-arrow">›</span></div>
+      </div>
+    </div>
+    <div class="chat-footer">
+      <input class="chat-input" placeholder="Type a message..." id="chatInput" onkeydown="if(event.key==='Enter')sendChatMsg()">
+      <button class="chat-send" onclick="sendChatMsg()"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
